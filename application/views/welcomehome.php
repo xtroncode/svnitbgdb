@@ -187,7 +187,7 @@ color: white;" type="submit" class="btn ">Find Donor</button>
 
    <div class="controls">
     <?php echo form_error('address'); ?>
-      <textarea style="height:113px" class="span11" type="text"  name="address" value="<?php echo set_value('address'); ?>" maxlength="100" value="<?php echo set_value('address'); ?>" placeholder="Address/Room No." required></textarea>
+      <textarea style="height:113px" class="span11" type="text"  name="address"  maxlength="100"  placeholder="Address/Room No." required><?php echo set_value('address'); ?></textarea>
 
   </div>
 
