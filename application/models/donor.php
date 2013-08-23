@@ -7,8 +7,9 @@ Class Donor extends CI_Model
 		
 		$limit=20;
 		$offset*=$limit;
+		$this->db->order_by('age','asc');
 		$query = $this->db->get_where('donor', $data , $limit, $offset);
-		$this->db->order_by('Age','asc');
+		
 		if ($query->num_rows()>0)
 		{
 
