@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 11, 2013 at 09:38 AM
+-- Generation Time: Aug 24, 2013 at 05:14 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.4.16
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `donordb`
 --
-CREATE DATABASE IF NOT EXISTS `donordb` DEFAULT CHARACTER SET latin1 COLLATE latin1_bin;
-USE `donordb`;
 
 -- --------------------------------------------------------
 
@@ -29,18 +27,19 @@ USE `donordb`;
 --
 
 CREATE TABLE IF NOT EXISTS `donor` (
-  `Name` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `Email` varchar(50) CHARACTER SET utf8 NOT NULL,
-  `BG` varchar(10) CHARACTER SET utf8 NOT NULL,
-  `Contact` varchar(10) CHARACTER SET utf8 NOT NULL,
-  `City` varchar(30) CHARACTER SET utf8 NOT NULL,
-  `State` varchar(30) CHARACTER SET utf8 NOT NULL,
-  `Pin` varchar(6) CHARACTER SET utf8 NOT NULL,
-  `Age` int(3) NOT NULL,
+  `name` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `bg` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `contact` varchar(10) CHARACTER SET utf8 NOT NULL,
+  `age` int(2) NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `branch` varchar(25) COLLATE latin1_bin NOT NULL,
+  `rollno` varchar(10) COLLATE latin1_bin NOT NULL,
+  `hostel` varchar(30) COLLATE latin1_bin NOT NULL,
+  `address` varchar(100) COLLATE latin1_bin NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `Email` (`Email`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=1 ;
+  UNIQUE KEY `Email` (`email`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=21 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
