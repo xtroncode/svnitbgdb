@@ -7,13 +7,13 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
-	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
-	<!--script src="js/less-1.3.3.min.js"></script-->
+	<!--link rel="stylesheet/less" href="/ci/less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="/ci/less/responsive.less" type="text/css" /-->
+	<!--script src="/ci/js/less-1.3.3.min.js"></script-->
 	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
 	
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link href="/ci/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/ci/css/bootstrap-responsive.min.css" rel="stylesheet">
 	
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -28,9 +28,9 @@
   <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="img/favicon.png">
   
-	<script type="text/javascript" src="/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/js/scripts.js"></script>
+	<script type="text/javascript" src="/ci/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/ci/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/ci/js/scripts.js"></script>
 <style type="text/css">
 body{
   /*background: #2DAEBF;
@@ -84,10 +84,10 @@ color: white;" >Home</a>-->
     <div class="span12">
       <ul class="pager">
   <li class="previous">
-    <a href="/index.php/search/pagin/<?php echo $prev;?>">&larr; Previous</a>
+    <a href="/ci/index.php/search/pagin/<?php echo $prev;?>">&larr; Previous</a>
   </li>
   <li class="next">
-    <a href="/index.php/search/pagin/<?php echo $next;?>">Newer &rarr;</a>
+    <a href="/ci/index.php/search/pagin/<?php echo $next;?>">Newer &rarr;</a>
   </li> 
 </ul>
       <table class="table table-condensed">
@@ -124,7 +124,7 @@ color: white;" >Home</a>-->
   <hr>
 <footer class="span11 text-center">
   <center>Powered by - <a href="https://www.facebook.com/webdevlabs" alt="webdevlabs"
-          target="_blank" title="Find us on Facebook"><img src="/img/wd150.png"  width="70" align="center"></a>
+          target="_blank" title="Find us on Facebook"><img src="/ci/img/wd150.png"  width="70" align="center"></a>
 </footer>
 </div>
 </body>
